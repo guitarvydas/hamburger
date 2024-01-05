@@ -1,0 +1,7 @@
+hamburger {
+  characters = character+
+  character =
+    | applySyntactic<Macro> -- macro
+    | any -- other
+  Macro = "I" "want" "a" "hamburger"
+}

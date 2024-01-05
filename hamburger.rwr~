@@ -1,0 +1,8 @@
+hamburger {
+  characters [character+] = ‛«character»’
+  character_macro [code] = ‛«code»’
+  character_other [c] = ‛«c»’
+    | applySyntactic<Macro> -- macro
+    | any -- other
+  Macro [kI kwant ka khamburger] = ‛«kitchen.order("hamburger")»’
+}

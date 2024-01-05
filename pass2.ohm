@@ -1,0 +1,8 @@
+pass2 {
+  characters = character+
+  character =
+    | verbatim -- verbatim
+    | any -- other
+  verbatim = "⎨" vchar* "⎬"
+  vchar = ~"⎨" ~"⎬" any
+}

@@ -1,0 +1,7 @@
+pass2 {
+  characters [character+] = ‛«character»’
+  character_verbatim [code] = ‛«code»’ 
+  character_other [c] = ‛«c»’ 
+  verbatim [_lb vchar* _rb] = ‛«vchar»’
+  vchar [c] = ‛«c»’
+}

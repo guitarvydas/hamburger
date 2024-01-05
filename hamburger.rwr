@@ -1,0 +1,6 @@
+hamburger {
+  characters [character+] = ‛«character»’
+  character_macro [code] = ‛«code»’
+  character_other [c] = ‛«c»’
+  Macro [_I _want _a _hamburger] = ‛⎨kitchen.order("hamburger")⎬’
+}
