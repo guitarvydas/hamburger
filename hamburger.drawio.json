@@ -4,16 +4,24 @@
         "name": "main",
         "children": [
             {
-                "name": "Pass 2",
-                "id": 3
-            },
-            {
                 "name": "Read Text File",
                 "id": 4
             },
             {
                 "name": "Hamburger",
                 "id": 8
+            },
+            {
+                "name": "?B",
+                "id": 10
+            },
+            {
+                "name": "?A",
+                "id": 14
+            },
+            {
+                "name": "Pass 2",
+                "id": 16
             }
         ],
         "connections": [
@@ -33,13 +41,26 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Read Text File",
-                    "id": 4
+                    "name": "Pass 2",
+                    "id": 16
                 },
-                "source_port": "str",
+                "source_port": "output",
                 "target": {
+                    "name": "?B",
+                    "id": 10
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 1,
+                "source": {
                     "name": "Hamburger",
                     "id": 8
+                },
+                "source_port": "output",
+                "target": {
+                    "name": "?A",
+                    "id": 14
                 },
                 "target_port": "input"
             },
@@ -52,15 +73,28 @@
                 "source_port": "output",
                 "target": {
                     "name": "Pass 2",
-                    "id": 3
+                    "id": 16
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 4
+                },
+                "source_port": "str",
+                "target": {
+                    "name": "Hamburger",
+                    "id": 8
                 },
                 "target_port": "input"
             },
             {
                 "dir": 2,
                 "source": {
-                    "name": "Read Text File",
-                    "id": 4
+                    "name": "Pass 2",
+                    "id": 16
                 },
                 "source_port": "error",
                 "target": {
@@ -68,6 +102,19 @@
                     "id": 0
                 },
                 "target_port": "error"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Pass 2",
+                    "id": 16
+                },
+                "source_port": "output",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "output"
             },
             {
                 "dir": 2,
@@ -85,21 +132,8 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "Pass 2",
-                    "id": 3
-                },
-                "source_port": "output",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": "output"
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "Pass 2",
-                    "id": 3
+                    "name": "Read Text File",
+                    "id": 4
                 },
                 "source_port": "error",
                 "target": {
